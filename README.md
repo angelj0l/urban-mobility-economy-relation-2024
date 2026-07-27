@@ -46,3 +46,6 @@ Based on the data, the recommendations for investment in infrastructure and mass
 1. Clone this repository:
    ```bash
    git clone [https://github.com/your-username/urban-mobility-economy-2024.git](https://github.com/your-username/urban-mobility-economy-2024.git)
+2. Use colab:
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([URL_DEL_NOTEBOOK_EN_GITHUB](https://colab.research.google.com/drive/15I9NGY3_Xu742ZpQRCZCil60mITC4W6p?usp=sharing))
+   
