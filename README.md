@@ -3,46 +3,46 @@ Data analysis project exploring the relationship between urban mobility (traffic
 
 # Urban Mobility and Economy 2024 🚗📊
 
-## 📌 Resumen del Proyecto
-Este proyecto de análisis de datos tiene como objetivo evaluar empíricamente la relación entre la **movilidad urbana** (niveles de congestión y tiempos de viaje) y la **productividad económica** (PIB per cápita y desempleo) en 15 de las principales ciudades latinoamericanas durante el año 2024. 
+## 📌 Project Overview
+This data analysis project aims to empirically evaluate the relationship between **urban mobility** (congestion levels and travel times) and **economic productivity** (GDP per capita and unemployment) across 15 major Latin American cities in 2024. 
 
-A través del procesamiento y cruce de múltiples fuentes de datos, el análisis busca responder a una pregunta clave de negocio y políticas públicas: *¿Existe una correlación directa entre la congestión vehicular y el desarrollo económico, y en qué ciudades es prioritario invertir en infraestructura de transporte?*
+By processing and merging multiple data sources, this analysis seeks to answer a key business and public policy question: *Is there a direct correlation between traffic congestion and economic development, and in which cities is it a priority to invest in transport infrastructure?*[cite: 1]
 
-## 🛠️ Tecnologías y Herramientas
-* **Lenguaje:** Python 3
-* **Manipulación y Limpieza de Datos:** Pandas, NumPy
-* **Visualización de Datos:** Seaborn, Matplotlib
-* **Entorno:** Jupyter Notebook
+## 🛠️ Technologies and Tools
+* **Language:** Python 3[cite: 1]
+* **Data Manipulation & Cleaning:** Pandas, NumPy[cite: 1]
+* **Data Visualization:** Seaborn, Matplotlib[cite: 1]
+* **Environment:** Jupyter Notebook
 
-## 🗂️ Fuentes de Datos
-El proyecto integra e ingesta datos de dos fuentes principales (más de 1 millón de registros procesados):
-1. **TomTom Traffic Index:** Datos en tiempo real e históricos sobre tiempos de viaje, retrasos por atascos (Jams Delay) e índices de tráfico por ciudad.
-2. **OECD Cities Economy:** Indicadores macroeconómicos incluyendo PIB per cápita, tasas de desempleo, niveles de contaminación (PM2.5) y tamaño poblacional.
+## 🗂️ Data Sources
+The project ingests and integrates data from two primary sources (processing over 1 million records)[cite: 1]:
+1. **TomTom Traffic Index:** Real-time and historical data on travel times, jams delay, and traffic indexes by city[cite: 1].
+2. **OECD Cities Economy:** Macroeconomic indicators including GDP per capita, unemployment rates, pollution levels (PM2.5), and population size[cite: 1].
 
-## ⚙️ Metodología de Trabajo
-El análisis siguió un flujo de trabajo profesional de *Data Analytics*:
+## ⚙️ Methodology
+The analysis followed a professional Data Analytics workflow:
 1. **Data Wrangling & Cleaning:** 
-   - Estandarización de nomenclaturas (*snake_case*).
-   - Conversión de tipos de datos complejos (transformación de *strings* monetarios y porcentuales a *floats*, casteo de formatos *datetime*).
-   - Generación de métricas absolutas (ej. cálculo de población total).
-2. **Transformación y Modelado:**
-   - Filtrado de registros históricos para aislar el periodo de estudio (2024).
-   - Agrupación (Group By) de múltiples registros diarios para calcular promedios métricos anuales por ciudad.
-   - *Inner Join* entre los conjuntos de datos de tráfico y economía utilizando variables clave (`city`, `year`).
-3. **Análisis Exploratorio (EDA):**
-   - Identificación de valores atípicos (*outliers*) y distribuciones estadísticas mediante visualizaciones (Boxplots, Histogramas y gráficos comparativos).
+   - Nomenclature standardization (*snake_case*)[cite: 1].
+   - Data type conversion (transforming monetary and percentage strings to floats, parsing datetime formats)[cite: 1].
+   - Generation of absolute metrics (e.g., calculating total population)[cite: 1].
+2. **Transformation & Modeling:**
+   - Filtering historical records to isolate the study period (2024)[cite: 1].
+   - Grouping multiple daily records to calculate annual average metrics per city[cite: 1].
+   - Performing an *Inner Join* between traffic and economic datasets using key variables (`city`, `year`)[cite: 1].
+3. **Exploratory Data Analysis (EDA):**
+   - Identifying outliers and statistical distributions through visualizations (Boxplots, Histograms, and comparative bar charts)[cite: 1].
 
-## 💡 Hallazgos Principales (Insights)
-* **Ausencia de correlación directa:** Se determinó que el PIB per cápita no es un factor que explique la congestión por sí solo. Por ejemplo, Montevideo posee el PIB per cápita más alto de la muestra ($26,176 USD) manteniendo niveles muy bajos de congestión, mientras que Ciudad de México presenta un PIB alto ($21,111 USD) pero sufre la congestión más severa de la región.
-* **Patrones opuestos en economías similares:** Ciudades como São Paulo y Buenos Aires, que comparten niveles económicos comparables, muestran patrones de congestión diametralmente opuestos.
-* **El problema del subdesarrollo y tráfico:** Ciudades con baja productividad relativa (como Bogotá y Lima) enfrentan una congestión crítica (retrasos promedio superiores a 1,000 minutos), lo que sugiere que la congestión aquí responde a deficiencias estructurales en la planificación urbana y no al volumen de actividad económica.
+## 💡 Key Insights
+* **Lack of direct correlation:** It was determined that GDP per capita alone does not explain congestion[cite: 1]. For instance, Montevideo has the highest GDP per capita in the sample ($26,176) while maintaining very low congestion levels, whereas Mexico City presents a high GDP (21,111) but suffers from the most severe congestion in the region[cite: 1].
+* **Opposite patterns in similar economies:** Cities like São Paulo and Buenos Aires, which share comparable economic levels, show diametrically opposed congestion patterns[cite: 1].
+* **The issue of underdevelopment and traffic:** Cities with relatively lower productivity (such as Bogotá and Lima) face critical congestion (average delays exceeding 1,000 minutes), suggesting that congestion here is driven by structural deficiencies in mobility management rather than economic activity volume[cite: 1].
 
-## 🎯 Recomendaciones Estratégicas
-Basado en los datos obtenidos, las recomendaciones de inversión en infraestructura y transporte público masivo son:
-1. **Ciudades de Prioridad Alta:** **Ciudad de México, São Paulo, Bogotá y Lima**. En estas urbes, la reducción de la congestión tendría un efecto multiplicador directo en su competitividad y productividad.
-2. **Casos de Estudio:** Analizar el modelo de movilidad y planificación urbana de **Montevideo** como caso de éxito aplicable al resto de la región.
+## 🎯 Strategic Recommendations
+Based on the data, the recommendations for investment in infrastructure and mass public transport are:
+1. **High Priority Cities:** **Mexico City, São Paulo, Bogotá, and Lima**[cite: 1]. In these cities, reducing congestion would have a direct multiplier effect on their competitiveness and productivity[cite: 1].
+2. **Case Studies:** Analyze **Montevideo's** mobility and urban planning model as a successful reference point applicable to the rest of the region[cite: 1].
 
-## 🚀 Cómo ejecutar este proyecto
-1. Clona este repositorio:
+## 🚀 How to Run This Project
+1. Clone this repository:
    ```bash
-   git clone [https://github.com/tu-usuario/urban-mobility-economy-2024.git](https://github.com/tu-usuario/urban-mobility-economy-2024.git)
+   git clone [https://github.com/your-username/urban-mobility-economy-2024.git](https://github.com/your-username/urban-mobility-economy-2024.git)
